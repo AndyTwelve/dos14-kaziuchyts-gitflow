@@ -7,4 +7,4 @@ if shell_path == "/bin/bash":
     print("Greetings bash!")
 
 else:
-    print("HELLO {shell}!")
+    print("HELLO ", shell_path)
