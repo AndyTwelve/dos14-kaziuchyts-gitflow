@@ -4,13 +4,15 @@ version = "0.1.0"
 description = ""
 authors = ["AndyTwelve <andy12@tut.by>"]
 readme = "README.md"
-packages = [{include = "my_py_project"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 
+[tool.poetry.group.dev]
+optional = true
+
 [tool.poetry.group.dev.dependencies]
-black = {version = "^23.3.0", optional = true} 
+black = "^23.3.0" 
 
 [build-system]
 requires = ["poetry-core"]
